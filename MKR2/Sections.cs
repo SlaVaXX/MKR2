@@ -12,8 +12,8 @@ public class Sections : Lines
 
     private void SetAngle()
     {
-        Vector2 Line = FirstCoordinate - SecondCoordinate;
-        Angle =  (float)((180 / Math.PI) * Math.Acos(Math.Cos(Vector2.Dot(Line,new Vector2(1,0)))));
+        Vector2 Line = SecondCoordinate - FirstCoordinate;
+        Angle =  (float)((180 / Math.PI) * Math.Acos(Vector2.Dot(Vector2.Normalize(Line),new Vector2(1,0))));
     }
     public float GetAngle()
     {

@@ -7,7 +7,7 @@ namespace MKR2
     {
         static void Main(string[] args)
         {
-            Sections section = new Sections(new Vector2(3,5), new Vector2(5,8));
+            Sections section = new Sections(new Vector2(0,0), new Vector2(0,10));
             Console.WriteLine(section.GetAngle());
             Console.WriteLine(section.GetLineLength());
         }
